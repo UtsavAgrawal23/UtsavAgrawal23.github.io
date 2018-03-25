@@ -7,7 +7,7 @@ app.component("helloWorld",{
     template : '<div>From component {{$ctrl.message}}</div>',
     controller : function(){
         var vm = this;
-        vm.message = "From component"
+        vm.message = "Hello World"
         console.log(vm.user);
     }
 });
