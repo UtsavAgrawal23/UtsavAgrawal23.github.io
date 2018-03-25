@@ -4,7 +4,8 @@ app.component("helloWorld",{
     bindings: {
         user : "="  
     },
-    template : '<div>From component {{$ctrl.message}}</div>',
+    controllerAs:'vm',
+    template : '<div>From component {{vm.message}}</div>',
     controller : function(){
         var vm = this;
         vm.message = "Hello World"
