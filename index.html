@@ -1,13 +1,19 @@
 <!doctype html>
-<html ng-app = "app">
+<html>
   <head>
     <title>My AngularJS App</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="js/sampleComponent.js"></script>
+    <!-- <base href="/"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>  
   </head>
   <body>
-      <input type = "text" ng-model="name">
-      <span>{{name}}</span>
-      <hello-world user = "'Utsav'"></hello-world>
+      <div>
+           <app class="test"></app>
+      </div>
+      <script src="app/app.module.js"></script>
+      <script src="app/app.component.js"></script>
+      <script src="app/app.controller.js"></script>
+     <script>
+           angular.bootstrap(document,['app']);
+     </script>       
   </body>
 </html>
